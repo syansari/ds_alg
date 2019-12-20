@@ -105,7 +105,6 @@ void BinaryTree::traversal() const {
     std::cout << '\n';
 }
 
-
 std::shared_ptr<Node> BinaryTree::create_binary_tree(const std::vector<char>& vv, const int begin, const int end) {
 
     if (begin > end) {
