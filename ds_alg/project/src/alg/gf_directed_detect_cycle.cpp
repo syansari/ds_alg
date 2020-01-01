@@ -39,7 +39,6 @@ bool Graph::has_cycle(const char vertex, std::deque<char>& stck) {
     return false;
 }
 
-
 void Graph::add_edge(const std::pair<char, char>&& item) {
 
     if (graph_.find(item.second) == graph_.end()) {
@@ -65,12 +64,12 @@ int main() {
 
     Graph g(26);
 
-    g.add_edge(std::pair<char, char>('a', 'b'));
-    g.add_edge(std::pair<char, char>('b', 'c'));
-    g.add_edge(std::pair<char, char>('c', 'd'));
-    g.add_edge(std::pair<char, char>('d', 'e'));
-    g.add_edge(std::pair<char, char>('e', 'f'));
-    g.add_edge(std::pair<char, char>('a', 'f'));
+    g.add_edge(std::pair<char, char>('a', 'b')); // a -> b
+    g.add_edge(std::pair<char, char>('b', 'c')); // b -> c
+    g.add_edge(std::pair<char, char>('c', 'd')); // c -> d
+    g.add_edge(std::pair<char, char>('d', 'e')); // d -> e
+    g.add_edge(std::pair<char, char>('e', 'f')); // e -> f
+    g.add_edge(std::pair<char, char>('a', 'f')); // a -> f
 
     std::deque<char> stck;
     std::cout << "has cycle: " << g.has_cycle('a', stck) << '\n';
