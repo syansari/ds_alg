@@ -2,7 +2,7 @@
 #include <string>
 #include <math.h>
 
-// x'AF1' = 2801
+// x'AF1' = d'2801'
 
 
 int base_conversion_16_to_10( std::string& input) {

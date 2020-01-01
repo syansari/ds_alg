@@ -19,7 +19,6 @@ public:
         quick_sort(*input_, 0, input_->size()-1);
     }
 
-
 private:
     std::vector<T> *input_;   // data to sort
 

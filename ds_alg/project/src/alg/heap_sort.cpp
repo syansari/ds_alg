@@ -64,9 +64,6 @@ int main() {
 
         max_heapify(vv, i, vv.size());
     }
-    
-    std::atomic_flag fl ATOMIC_FLAG_INIT;
-    fl.test_and_set();
 
     heap_sort(vv);
 }
