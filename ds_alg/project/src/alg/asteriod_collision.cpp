@@ -2,6 +2,11 @@
 #include <vector>
 #include <iostream>
 
+// https://leetcode.com/problems/asteroid-collision/
+
+// this time complexity of this code is o(n^2)
+
+// this is a naive solution and it can be solved using stack with time complexity o(n)
 
 void find_final_state(std::list<int>& asteroids) {
 
